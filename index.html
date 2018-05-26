@@ -14,6 +14,38 @@
     <script src="https://www.gstatic.com/firebasejs/4.1.2/firebase.js"></script>
     <script>
 window.alert("注意 : このチャットはまだβ版です。");
+	    
+	    
+
+$(function() {
+    var Accordion = function(el, multiple) {
+        this.el = el || {};
+        this.multiple = multiple || false;
+
+        // Variables privadas
+        var links = this.el.find('.link');
+        // Evento
+        links.on('click', {el: this.el, multiple: this.multiple}, this.dropdown)
+    }
+
+    Accordion.prototype.dropdown = function(e) {
+        var $el = e.data.el;
+            $this = $(this),
+            $next = $this.next();
+
+        $next.slideToggle();
+        $this.parent().toggleClass('open');
+
+        if (!e.data.multiple) {
+            $el.find('.submenu').not($next).slideUp().parent().removeClass('open');
+        };
+    }   
+
+    var accordion = new Accordion($('#accordion'), false);
+});
+
+Rerun
+
         
         function disp(){
 
@@ -57,6 +89,14 @@ window.alert("注意 : このチャットはまだβ版です。");
             </div>
 
 		<button id="post" class="postarea-button">投稿する</button>
+		            <div class="link"><i class="fa fa-paint-brush"></i>その他の機能<i class="fa fa-chevron-down"></i></div>
+            <ul class="submenu">
+                <li><a href="https://goo.gl/forms/b9t34E14TIMnI6ej1">投稿削除申請フォーム</a></li>
+                <li><a href="https://github.com/0505Keitan/chat">GITHUB</a></li>
+                <li><a href="readme.html">ReadMe</a></li>
+                <li><a href="#">Maquetacion web</a></li>
+            </ul>
+        </li>
         <a href="https://goo.gl/forms/b9t34E14TIMnI6ej1">投稿削除申請フォーム</a>
         <p><input type="button" value="このチャットについて" onClick="disp()"></p>
 		<a href="https://github.com/0505Keitan/chat">GITHUB</a>
