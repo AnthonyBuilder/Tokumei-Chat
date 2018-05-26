@@ -144,7 +144,7 @@ a {
  ===========================*/
 
  .accordion {
-    width: 100%;
+    width: 50%;
     max-width: 360px;
     margin: 30px auto 20px;
     background: #FFF;
