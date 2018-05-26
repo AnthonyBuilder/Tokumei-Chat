@@ -15,22 +15,14 @@
 		<script>
 			window.alert("注意 : このチャットはまだβ版です。");
 			function EU(){
-
-	// 「OK」時の処理開始 ＋ 確認ダイアログの表示
-	if(window.confirm('Are you live in EU?')){
-
-		location.href = "http://webstop.html.xdomain.jp/gdprerror.html"; // gdprerror.html へジャンプ
-
-	}
-	// 「OK」時の処理終了
-
-	// 「キャンセル」時の処理開始
-	else{
-
-	}
-	// 「キャンセル」時の処理終了
-
-}
+				// 「OK」時の処理開始 ＋ 確認ダイアログの表示
+				if(window.confirm('Are you live in EU?')){
+					location.href = "http://webstop.html.xdomain.jp/gdprerror.html"; // gdprerror.html へジャンプ
+				}// 「OK」時の処理終了
+				// 「キャンセル」時の処理開始
+				else{
+				}// 「キャンセル」時の処理終了
+			}
 			EU()
 			$(function() {
 				var Accordion = function(el, multiple) {
@@ -47,132 +39,122 @@
 						$next = $this.next();
 
 					$next.slideToggle();
-        $this.parent().toggleClass('open');
-
-        if (!e.data.multiple) {
-            $el.find('.submenu').not($next).slideUp().parent().removeClass('open');
-        };
-    }   
-
-    var accordion = new Accordion($('#accordion'), false);
-});
-
-Rerun
-
-        
-        function disp(){
-
-	window.alert('まだBETA版ですので動作に不具合があるかもしれません。なんかあったり機能を増やして欲しかったらIssuesに書いてください。よろしくお願いします。2018/5/24 Keitan');
-
-}
-</script>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-104906538-12"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-104906538-12');
-</script>
-</head>
-
-<body>
-    <div class="header">
-	    <h1 class="logo">Tokumei Chat <font color="red">BETA</font>   <font size="5">βver2.0</font></h1>
-    </div>
-
-    <div class="container">
-        <div class="postarea cf">
-
-            <div class="postarea-text">
-                <textarea name="" id="content" cols="30" rows="10" placeholder="Enterで投稿"></textarea>
-            </div>
-
-            <div class="postarea-share cf">
-                <p>このチャットをシェアする！</p>
-                <div class="postarea-share-button cf">
-                    <script>
-                    var url = encodeURIComponent(location.href);
-                    document.write('<iframe src="//www.facebook.com/plugins/like.php?href='+url+'&amp;width&amp;layout=button&amp;action=like&amp;show_faces=false&amp;share=true&amp;height=35" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:20px;" allowTransparency="true"></iframe>');
-                    </script>
-                    <a href="http://twitter.com/share?text=Tokumei%20Chat%20BETA%20%7c%20%e5%8c%bf%e5%90%8d%e3%83%81%e3%83%a3%e3%83%83%e3%83%88%20%e3%83%99%e3%83%bc%e3%82%bf%e7%89%88%20%400505Keitan%20%2f%20&url=https://0505keitan.github.io/Tokumei-Chat/&related=orefolder" class="twitter-share-button" data-lang="ja" data-count="none">ツイート</a>
-                    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-                </div>
-            </div>
-
-		<button id="post" class="postarea-button">投稿する</button>
-		<ul id="accordion" class="accordion">
-		            <div class="link"><i class="fa fa-paint-brush"></i>その他の機能<i class="fa fa-chevron-down"></i></div>
-            <ul class="submenu">
-		    <li><a href="#" onClick="disp()">このチャットについて</a></li>
-		    <li><a href="readme.html">利用規約</a></li>
-		    <li><a href="https://goo.gl/forms/b9t34E14TIMnI6ej1">投稿削除申請フォーム</a></li>
-		    <li><a href="https://github.com/0505Keitan/chat">GITHUB</a></li>
-		    <li><a href="https://github.com/n0bisuke/firebase_chat">Forked by n0bisuke</a></li>
-		    <li><a href="archive.html">過去の投稿</a></li>
-            </ul>
-        </ul>
+					$this.parent().toggleClass('open');
+					if (!e.data.multiple) {
+						$el.find('.submenu').not($next).slideUp().parent().removeClass('open');
+					};
+				}
+				var accordion = new Accordion($('#accordion'), false);
+			});
+			Rerun
+			function disp(){
+				window.alert('まだBETA版ですので動作に不具合があるかもしれません。なんかあったり機能を増やして欲しかったらIssuesに書いてください。よろしくお願いします。2018/5/24 Keitan');
+			}
+		</script>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-104906538-12"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', 'UA-104906538-12');
+		</script>
+	</head>
+	<body>
+		<div class="header">
+			<h1 class="logo">Tokumei Chat <font color="red">BETA</font>   <font size="5">βver2.0</font></h1>
 		</div>
-        
-    </div>
-
-    <div id="messages" class="content">
-        <div id="dummy"></div>
-    </div>
-
-	<p class="footer"><a href="#">上に戻る</a></p>
-
-    <script>
-        'use strict';
-        //Firebaseの初期化
-        firebase.initializeApp({databaseURL: "https://chat-0505keitan.firebaseio.com"});
-        const database = firebase.database();
-        const ref = database.ref('messages');
-        let last_message = "dummy";
-        //初期読み込み & pushイベント検知
-        ref.on("child_added", (snapshot) => {
-            renderMessage({
-                id: snapshot.key,
-                value: snapshot.val()
-            });
-        });
-        //インジェクション対策
-        const escapeHTML = (val) => $('<div>').text(val).html();
-        //投稿処理
-        const postAction = () => {
-            const content = escapeHTML($("#content").val());
-            if(content && content !== "") {
-                ref.push({
-                    title: 'タイトル',
-                    content: content,
-                    date: new Date().getTime()
-                })
-                .then((res)=>{
-                    console.log(res);
-                });
-            }
-            $("#content").val("");
-        };
-        //メッセージをDOM追加
-        const renderMessage = (message) => {
-            const message_html = `<p class="post-text">${escapeHTML(message.value.content)}</p>`;
-            let date_html = '';
-            if(message.value.date) {
-                date_html = `<p class="post-date">${escapeHTML(new Date(message.value.date).toLocaleString())}</p>`;
-            }
-            $("#"+last_message).before(`<div id="${message.id}" class="post">${message_html}${date_html}</div>`);
-            last_message = message.id;
-        }
-        //クリック時の処理
-        $('#post').click(() => postAction());
-        //エンターキータイプ時の処理
-        $('#content').keydown((e) => {
-            if(e.which == 13){
-                postAction();
-                return false;
-            }
-        });
-    </script>
-</body>
+		<div class="container">
+			<div class="postarea cf">
+				<div class="postarea-text">
+					<textarea name="" id="content" cols="30" rows="10" placeholder="Enterで投稿"></textarea>
+				</div>
+				<div class="postarea-share cf">
+					<p>このチャットをシェアする！</p>
+					<div class="postarea-share-button cf">
+						<script>
+							var url = encodeURIComponent(location.href);
+							document.write('<iframe src="//www.facebook.com/plugins/like.php?href='+url+'&amp;width&amp;layout=button&amp;action=like&amp;show_faces=false&amp;share=true&amp;height=35" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:20px;" allowTransparency="true"></iframe>')
+						</script>
+						<a href="http://twitter.com/share?text=Tokumei%20Chat%20BETA%20%7c%20%e5%8c%bf%e5%90%8d%e3%83%81%e3%83%a3%e3%83%83%e3%83%88%20%e3%83%99%e3%83%bc%e3%82%bf%e7%89%88%20%400505Keitan%20%2f%20&url=https://0505keitan.github.io/Tokumei-Chat/&related=orefolder" class="twitter-share-button" data-lang="ja" data-count="none">ツイート</a>
+						<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+					</div>
+				</div>
+				<button id="post" class="postarea-button">投稿する</button>
+				<ul id="accordion" class="accordion">
+					<div class="link">
+						<i class="fa fa-paint-brush"></i>
+						その他の機能
+						<i class="fa fa-chevron-down"></i>
+					</div>
+					<ul class="submenu">
+						<li><a href="#" onClick="disp()">このチャットについて</a></li>
+						<li><a href="readme.html">利用規約</a></li>
+						<li><a href="https://goo.gl/forms/b9t34E14TIMnI6ej1">投稿削除申請フォーム</a></li>
+						<li><a href="archive.html">過去の投稿</a></li>
+						<li><a href="https://github.com/0505Keitan/chat">GITHUB</a></li>
+						<li><a href="https://github.com/n0bisuke/firebase_chat">Forked by n0bisuke</a></li>
+					</ul>
+				</ul>
+			</div>
+		</div>
+		<div id="messages" class="content">
+			<div id="dummy">
+			</div>
+		</div>
+		<p class="footer">
+			<a href="#">上に戻る</a>
+		</p>
+		<script>
+			'use strict';
+			//Firebaseの初期化
+			firebase.initializeApp({databaseURL: "https://chat-0505keitan.firebaseio.com"});
+			const database = firebase.database();
+			const ref = database.ref('messages');
+			let last_message = "dummy";
+			//初期読み込み & pushイベント検知
+			ref.on("child_added", (snapshot) => {
+				renderMessage({
+					id: snapshot.key,
+					value: snapshot.val()
+				});
+			});
+			//インジェクション対策
+			const escapeHTML = (val) => $('<div>').text(val).html();
+			//投稿処理
+			const postAction = () => {
+				const content = escapeHTML($("#content").val());
+				if(content && content !== "") {
+					ref.push({
+						title: 'タイトル',
+						content: content,
+						date: new Date().getTime()
+					})
+						.then((res)=>{
+						console.log(res);
+					});
+				}
+				$("#content").val("");
+			};
+			//メッセージをDOM追加
+			const renderMessage = (message) => {
+				const message_html = `<p class="post-text">${escapeHTML(message.value.content)}</p>`;
+				let date_html = '';
+				if(message.value.date) {
+					date_html = `<p class="post-date">${escapeHTML(new Date(message.value.date).toLocaleString())}</p>`;
+				}
+				$("#"+last_message).before(`<div id="${message.id}" class="post">${message_html}${date_html}</div>`);
+				last_message = message.id;
+			}
+			//クリック時の処理
+			$('#post').click(() => postAction());
+			//エンターキータイプ時の処理
+			$('#content').keydown((e) => {
+				if(e.which == 13){
+					postAction();
+					return false;
+				}
+			});
+		</script>
+	</body>
 </html>
