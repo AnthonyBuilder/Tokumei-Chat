@@ -3,7 +3,12 @@ html {
 }
 
 body {
-    font-family:游ゴシック,YuGothic,ヒラギノ角ゴ ProN W3,Hiragino Kaku Gothic ProN,メイリオ,Meiryo,Arial,sans-serif;font-size:15px;background:#f7f7f7;min-width:20pc;line-height:1.6;color:#3a342e
+    font-family:游ゴシック,YuGothic,ヒラギノ角ゴ ProN W3,Hiragino Kaku Gothic ProN,メイリオ,Meiryo,Arial,sans-serif;
+    font-size:15px;
+    background:#f7f7f7;
+    min-width:20pc;
+    line-height:1.6;
+    color:#3a342e
 }
 
 body,h1 {
