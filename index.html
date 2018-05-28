@@ -16,11 +16,12 @@
 			window.alert("注意 : このチャットはまだβ版です。");
 			function EU(){
 				// 「OK」時の処理開始 ＋ 確認ダイアログの表示
-				if(window.confirm('Are you live in EU?')){
+				if(window.confirm('Are you live in EU?'))($.cookie('key')){
 					location.href = "http://webstop.html.xdomain.jp/gdprerror.html"; // gdprerror.html へジャンプ
 				}// 「OK」時の処理終了
 				// 「キャンセル」時の処理開始
 				else{
+					$.cookie('key', 'visit', { expires: 999999999 });
 				}// 「キャンセル」時の処理終了
 			}
 			EU()
