@@ -226,6 +226,7 @@ a {
  }
 
 .accordion .link {
+    padding: 10px;
     cursor: pointer;
     display: block;
     color: #4D4D4D;
